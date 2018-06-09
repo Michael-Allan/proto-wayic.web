@@ -13,7 +13,7 @@ wayic.js/doc.task - Documentation in rough
     - when in doubt about two programming choices that are more-or-less equal in functionality
         - choose the clearer of the two
 
-    Javadoc `
+    Javadoc`
     - writing API documentation in Javadoc form
     + except in the range of characters used
         - the full range is used for the (typically) extensive documentation at file top and bottom
@@ -24,6 +24,20 @@ wayic.js/doc.task - Documentation in rough
                        not: “like so”, or ‘so’
             - because this is the only place they get read
                 ( they're Javadocs in form only, with no separate rendering as such
+
+    modules`
+    - namely
+        - *script* elements with a *type* attribute of 'module'
+        - *export* and *import* statements
+            ( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
+            ( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+    - unable to use in XML documents
+        - such as, most notably, way declaration documents
+        - Chrome bug
+            ( https://bugs.chromium.org/p/chromium/issues/detail?id=717643
+            - e.g. Chrome (65) gives a runtime error
+                ' Module scripts in XML documents are currently not supported
+                - referencing the bug report
 
 
 
