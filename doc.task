@@ -1,0 +1,30 @@
+wayic.js/doc.task - Documentation in rough
+
+    data typing`
+    ' Primitive types are named in lowercase, as for example ‘number’, while their corresponding
+      Object wrapper types are named in title case, e.g. ‘Number’.  A formal parameter that
+      is labeled as being of a primitive type (say ‘string’) is thereby declared to accept
+      not only values of that type (string) but also references to its Object wrappers (String).
+
+    clarity`
+    - next to function
+        - next to delivering|implementing and maintaining the design
+        - the clarity of the code has top priority
+    - when in doubt about two programming choices that are more-or-less equal in functionality
+        - choose the clearer of the two
+
+    Javadoc `
+    - writing API documentation in Javadoc form
+    + except in the range of characters used
+        - the full range is used for the (typically) extensive documentation at file top and bottom
+        - but elsewhere
+            - in closer proximity to the source code
+            - the range is narrowed to that of program comments
+            - e.g. quoting: 'like so', or "so"
+                       not: “like so”, or ‘so’
+            - because this is the only place they get read
+                ( they're Javadocs in form only, with no separate rendering as such
+
+
+
+                                     Copyright © 2017-2018 Michael Allan and contributors.  Licence MIT.
