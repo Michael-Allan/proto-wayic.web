@@ -1,18 +1,21 @@
 wayic.js/doc.task - Documentation in rough
 
-    data typing`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Data typing`
     ' Primitive types are named in lowercase, as for example ‘number’, while their corresponding
       Object wrapper types are named in title case, e.g. ‘Number’.  A formal parameter that
       is labeled as being of a primitive type (say ‘string’) is thereby declared to accept
       not only values of that type (string) but also references to its Object wrappers (String).
 
-    clarity`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Clarity`
     - next to function
         - next to delivering|implementing and maintaining the design
         - the clarity of the code has top priority
     - when in doubt about two programming choices that are more-or-less equal in functionality
         - choose the clearer of the two
 
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
     Javadoc`
     - writing API documentation in Javadoc form
     + except in the range of characters used
@@ -25,7 +28,8 @@ wayic.js/doc.task - Documentation in rough
             - because this is the only place they get read
                 ( they're Javadocs in form only, with no separate rendering as such
 
-    modules`
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Modules`
     - namely
         - *script* elements with a *type* attribute of 'module'
         - *export* and *import* statements
