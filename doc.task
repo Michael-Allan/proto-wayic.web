@@ -16,17 +16,37 @@ wayic.js/doc.task - Documentation in rough
         - choose the clearer of the two
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
-    Javadoc`
-    - writing API documentation in Javadoc form
-    + except in the range of characters used
-        - the full range is used for the (typically) extensive documentation at file top and bottom
-        - but elsewhere
-            - in closer proximity to the source code
-            - the range is narrowed to that of program comments
-            - e.g. quoting: 'like so', or "so"
-                       not: “like so”, or ‘so’
-            - because this is the only place they get read
-                ( they're Javadocs in form only, with no separate rendering as such
+    Code documentation`
+    + Javadoc form
+        - write the in-source API documentation in modified Javadoc form
+            - even though they are unlikely to be separately rendered as such
+        - except in the range of characters used
+            - use the full range (if at all) only in the (typically) extensive documentation
+              at file top and bottom
+            - everywhere use a limited range
+                - limiting to what is normally used in program comments
+                - e.g. quoting: 'like so', or "so"
+                           not: “like so”, or ‘so’
+                - because it will be read there in close proximity to the source code, nowhere else
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Global namespacing`
+    - namespacing for global declarations
+        - example: the public program interface declared at window.wayic_read_readable
+    + dot delimited namespacing
+        - avoid it
+        - example of dot delimited namespacing
+
+              window.wayic.read.readable  (avoid this)
+
+        - too hard for the programmer to publish the interface cleanly, without clobbering others
+        - too hard for the waycaster (in way.js) to test for the presence of the interface cleanly
+            - without tripping over *who knows what* undefined component of the name
+              when the program happens to fail
+            - then puzzling over the consequent error message
+        - example of correction
+
+              window.wayic_read_readable
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Modules`
