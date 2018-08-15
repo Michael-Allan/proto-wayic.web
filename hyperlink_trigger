@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<html xml:lang='en-CA' xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <title>‘hyperlink trigger’</title>
+        </head>
+    <body>
+
+
+<section      id='hyperlink_trigger'>
+    <h2><a href='#hyperlink_trigger'>
+                  hyperlink trigger</a></h2>
+    <ul>
+        <li>
+            (noun) An HTML <a href='http://w3c.github.io/html/textlevel-semantics.html#the-a-element'>
+            <code>a</code></a> element or other device that activates a hyperlink
+            </li>
+        </ul>
+    </section>
+
+
+        </body>
+    </html>

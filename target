@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<html xml:lang='en-CA' xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <title>‘target’</title>
+        </head>
+    <body>
+
+
+<section      id='target'>
+    <h2><a href='#target'>
+                  target</a></h2>
+    <ul>
+        <li>
+            (verb) (of a browser window) indicate an HTML element
+            by <code><a href='https://developer.mozilla.org/en-US/docs/Web/API/Window/location'>
+            window.location</a>.hash</code>
+            </li>
+        <li>
+            (noun) an HTML element indicated by <code>window.location.hash</code>
+            </li>
+        </ul>
+    </section>
+
+
+        </body>
+    </html>
