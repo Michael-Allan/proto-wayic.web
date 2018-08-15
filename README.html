@@ -16,12 +16,12 @@
     The files for this project are released under an <a href='LICENCE.txt'>MIT licence</a>.
     </p>
 <ul lang='en-CA'>
-    <li>Readable copy of latest files at <a href='http://reluk.ca/project/wayic/js/'>reluk.ca</a></li>
+    <li>Readable copy of latest files at <a href='http://reluk.ca/project/wayic/web/'>reluk.ca</a></li>
     <li>Browsable revision history at <a>GitHub</a> (top of this page) *</li>
     <li>
         Bare <code>.git</code> clones at
-        <a href=    'http://reluk.ca/var/repo/git/wayic.js.git'>reluk.ca</a> or
-        <a href='https://github.com/Michael-Allan/wayic.js.git'>GitHub</a> *
+        <a href=    'http://reluk.ca/var/repo/git/wayic.web.git'>reluk.ca</a> or
+        <a href='https://github.com/Michael-Allan/wayic.web.git'>GitHub</a> *
         <div style='font-size:0.85em; margin-top:1em; opacity:0.7'>
             * Branch reluk.ca is liable to be rebased, master is stable.
             </div>
@@ -49,7 +49,7 @@
                 if( t.localName !== 'a' ) continue;
 
                 var maybeFinished = false;
-                if( !isCorrect_reluk && t.href === 'http://reluk.ca/project/wayic/js/' )
+                if( !isCorrect_reluk && t.href === 'http://reluk.ca/project/wayic/web/' )
                 {
                   // Disable useless link, append text directions instead
                   // --------------------
@@ -69,7 +69,7 @@
                           // Remove deceptive text directions, enable link instead
                           // --------------------------------
                             text.replaceData( 0, text.length, ' *' ); // Leaving only the last bit
-                            t.setAttribute( 'href', 'https://github.com/Michael-Allan/wayic.js/' );
+                            t.setAttribute( 'href', 'https://github.com/Michael-Allan/wayic.web/' );
                             isCorrect_github = maybeFinished = true;
                         }
                     }
