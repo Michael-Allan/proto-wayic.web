@@ -1,0 +1,65 @@
+wayic.web/js_doc.task - Common conventions for JavaScript programming
+
+    ( documentation in rough
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Global namespacing`
+    - namespacing for global declarations in JavaScript
+        - example: the public program interface declared at window.wayic_read_readable
+    + dot delimited namespacing
+        - avoid it
+        - example of dot delimited namespacing
+
+              window.wayic.read.readable  (avoid this)
+
+        - too hard for the programmer to publish the interface cleanly, without clobbering others
+        - too hard for the waycaster (in way.js) to test for the presence of the interface cleanly
+            - without tripping over *who knows what* undefined component of the name
+              when the program happens to fail
+            - then puzzling over the consequent error message
+        - example of correction
+
+              window.wayic_read_readable
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Modules`
+    - namely
+        - HTML *script* elements with a *type* attribute of 'module'
+        - JavaScript *export* and *import* statements
+            ( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
+            ( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+    - unable to use in XML documents
+        - such as, most notably, way declaration documents
+        - Chrome bug
+            ( https://bugs.chromium.org/p/chromium/issues/detail?id=717643
+            - e.g. Chrome (65) gives a runtime error
+                ' Module scripts in XML documents are currently not supported
+                - referencing the bug report
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Source code documentation`
+    - in-source documentation of JavaScript programs
+    + Javadoc form
+        - write the in-source API documentation in modified Javadoc form
+            - even though they are unlikely to be separately rendered as such
+        - except in the range of characters used
+            - use the full range (if at all) only in the (typically) extensive documentation
+              at file top and bottom
+            - everywhere use a limited range
+                - limiting to what is normally used in program comments
+                - e.g. quoting: 'like so', or "so"
+                           not: “like so”, or ‘so’
+                - because it will be read there in close proximity to the source code, nowhere else
+    + data typing
+        - primitive types
+            - name a primitive type in lowercase
+                < 'number' for example
+            - name its wrapper type (a subtype of Object) in title case
+                < 'Number' for example
+            - a formal parameter that is typed as a primitive (say 'string')
+              is thereby declared to accept actual parameters of both the primitive type (string)
+              and the wrapper type (String)
+
+
+
+                                     Copyright © 2017-2018 Michael Allan and contributors.  Licence MIT.
