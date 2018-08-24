@@ -8,13 +8,6 @@
 
 <section id='trigger'>
     <h2>     trigger</h2>
-    <ul>
-        <li>
-            as per
-            <cite><a href='https://en.wiktionary.org/wiki/trigger'>
-                           https://en.wiktionary.org/wiki/trigger</a></cite>
-            </li>
-        </ul>
     </section>
 <section id='xrefs' style='border-top:thin solid'>
     <section id='hyperlink_trigger'>
