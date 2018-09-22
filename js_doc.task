@@ -13,7 +13,7 @@ wayic.web/js_doc.task - Common conventions for JavaScript programming
               window.wayic.read.readable  (avoid this)
 
         - too hard for the programmer to publish the interface cleanly, without clobbering others
-        - too hard for the waycaster (in way.js) to test for the presence of the interface cleanly
+        - too hard for the waycaster (in way_declaration_document.js) to test for the presence of the interface cleanly
             - without tripping over *who knows what* undefined component of the name
               when the program happens to fail
             - then puzzling over the consequent error message
