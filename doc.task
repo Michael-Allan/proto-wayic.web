@@ -8,14 +8,20 @@ wayic.web/doc.task - Documentation in rough
         - configuration placed in files of the waycast root directory
         - these files configure the Web view of way declaration documents
             - both the view shown to the waycaster, and the default view shown to others
-        + way_declaration_document.css
+        + `way_declaration_document.css` -
             - personal style sheet
+            - summoned by a `link` tag in each way declaration document of the waycast,
+              this style sheet runs on the client side — in the waycast reader's Web browser —
+              where it governs the presentation of each way declaration document.
             - format: CSS
                 ( https://www.w3.org/TR/CSS/
             - example
                 < http://reluk.ca/project/waycast/way_declaration_document.css
-        + way_declaration_document.js
+        + `way_declaration_document.js` -
             - personal configuration program
+            - summoned by a `script` tag in each way declaration document of the waycast,
+              this program runs on the client side - in the waycast reader's Web browser -
+              where it manipulates the DOM of each way declaration document.
             - format: JavaScript
                 ( https://github.com/tc39/ecma262#ecmascript
             - example
