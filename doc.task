@@ -64,6 +64,33 @@ wayic.web/doc.task - Documentation in rough
             ( source: https://github.com/Michael-Allan/waycast/blob/master/constraints.xht
             ( live: http://reluk.ca/project/waycast/constraints.xht
 
+    ────────────────────────────────────────────────────────────────────────────────────────────────────
+    Testing and troubleshooting`
+    * avoiding 'file' scheme
+        - problem
+            - a 'file' scheme is inapt for test purposes
+            - Web documents loaded on a 'file' scheme URI tend to misbehave in browsers
+                ( http://reluk.ca/project/waycast/_/waycast.xslt.txt
+                ( http://reluk.ca/project/wayic/lex/_/reader.js § testing §§ limitations under 'file' scheme
+                ( http://reluk.ca/project/wayic/read/manual.task § installation §§ limitations under 'file' scheme
+                ( http://reluk.ca/project/wayic/read/readable.js § installation §§ limitations under 'file' scheme
+                ( https://stackoverflow.com/q/52372080/2402790
+                ( https://stackoverflow.com/q/52697798/2402790
+        - general solution
+            - a convenient, flexible method to test any type of Web document
+              without round tripping through a remote server
+            = list
+                | Jetty on Nashorn
+                    - if feasible
+                | Python *http.server*
+                    ( https://docs.python.org/3/library/http.server.html
+                    - for extensionless files one would map MIME type '' to whatever is appropriate
+                      in the context
+                        ( https://docs.python.org/3/library/http.server.html#http.server.SimpleHTTPRequestHandler.extensions_map
+                | Jetty on Java
+                    - clumsy to share
+            = task further
+
 
 
                                           Copyright © 2018 Michael Allan and contributors.  Licence MIT.
