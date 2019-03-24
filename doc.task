@@ -2,6 +2,7 @@ wayic.web/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Configuration of a waycast`
+    ( Web specific configuration of a waycast
     < see also: wayic.cast § Configuration of a waycast
         ( http://reluk.ca/project/wayic/cast/doc.task
     * waycast root directory
@@ -11,17 +12,17 @@ wayic.web/doc.task - Documentation in rough
         + `way_declaration_document.css` -
             - personal style sheet
             - summoned by a `link` tag in each way declaration document of the waycast,
-              this style sheet runs on the client side — in the waycast reader's Web browser —
-              where it governs the presentation of each way declaration document.
+              this style sheet works on the client side — in the waycast reader's Web browser —
+              where it formats the presentation of the way declaration.
             - format: CSS
                 ( https://www.w3.org/TR/CSS/
             - example
                 < http://reluk.ca/project/waycast/way_declaration_document.css
         + `way_declaration_document.js` -
-            - personal configuration program
+            - personal presentation program
             - summoned by a `script` tag in each way declaration document of the waycast,
               this program runs on the client side - in the waycast reader's Web browser -
-              where it manipulates the DOM of each way declaration document.
+              where it manipulates the DOM of the way declaration.
             - format: JavaScript
                 ( https://github.com/tc39/ecma262#ecmascript
             - example
@@ -70,7 +71,7 @@ wayic.web/doc.task - Documentation in rough
         - problem
             - a 'file' scheme is inapt for test purposes
             - Web documents loaded on a 'file' scheme URI tend to misbehave in browsers
-                ( http://reluk.ca/project/waycast/_/waycast.xslt.txt
+                ( http://reluk.ca/project/waycast/_/waycast_configuration_file.xslt.txt
                 ( http://reluk.ca/project/wayic/lex/_/reader.js § testing §§ limitations under 'file' scheme
                 ( http://reluk.ca/project/wayic/read/manual.task § installation §§ limitations under 'file' scheme
                 ( http://reluk.ca/project/wayic/read/readable.js § installation §§ limitations under 'file' scheme
@@ -93,4 +94,4 @@ wayic.web/doc.task - Documentation in rough
 
 
 
-                                          Copyright © 2018 Michael Allan and contributors.  Licence MIT.
+                                     Copyright © 2018-2019 Michael Allan and contributors.  Licence MIT.
