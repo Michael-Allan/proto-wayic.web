@@ -1,37 +1,39 @@
-wayic.web/js_doc.task - General conventions for JavaScript programming
+wayic/web/js_doc.task - General conventions for JavaScript programming
 
     ( documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Global namespacing`
     - namespacing for global declarations in JavaScript
-        - example: the public program interface declared at window.wayic_read_readable
+        - example: the public program interface declared at `window.ca_reluk_wayic_read_wayDecDoc` -
     + dot delimited namespacing
-        - avoid it
         - example of dot delimited namespacing
 
-              window.wayic.read.readable  (avoid this)
+              window.ca.reluk.wayic.read.wayDecDoc
 
-        - too hard for the programmer to publish the interface cleanly, without clobbering others
-        - too hard for the waycaster (in way_declaration_document.js) to test for the presence of the interface cleanly
+        - avoid it
+        - too hard for the programmer to publish the interface cleanly
+            - without clobbering others
+        - too hard for the waycaster (in `way_declaration_document.js`) to test for the presence
+          of the interface cleanly
             - without tripping over *who knows what* undefined component of the name
               when the program happens to fail
             - then puzzling over the consequent error message
         - example of correction
 
-              window.wayic_read_readable
+              window.ca_reluk_wayic_read_wayDecDoc
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Modules`
     - namely
-        - HTML *script* elements with a *type* attribute of 'module'
-        - JavaScript *export* and *import* statements
+        - HTML `script` elements with a `type` attribute of 'module'
+        - JavaScript `export` and `import` statements
             ( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
             ( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
     - unable to use in XML documents
         - such as, most notably, way declaration documents
         - Chrome bug
-            ( https://bugs.chromium.org/p/chromium/issues/detail?id=717643
+            < https://bugs.chromium.org/p/chromium/issues/detail?id=717643
             - e.g. Chrome (65) gives a runtime error
                 ' Module scripts in XML documents are currently not supported
                 - referencing the bug report
@@ -62,4 +64,4 @@ wayic.web/js_doc.task - General conventions for JavaScript programming
 
 
 
-                                     Copyright © 2017-2018 Michael Allan and contributors.  Licence MIT.
+                                     Copyright © 2017-2019 Michael Allan and contributors.  Licence MIT.
