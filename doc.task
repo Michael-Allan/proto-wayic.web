@@ -1,69 +1,52 @@
-wayic.web/doc.task - Documentation in rough
+wayic/web/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Configuration of a waycast`
     ( Web specific configuration of a waycast
-    < see also: wayic.cast § Configuration of a waycast
+    < see also: `wayic.cast` § Configuration of a waycast
         ( http://reluk.ca/project/wayic/cast/doc.task
     * waycast root directory
-        - configuration placed in files of the waycast root directory
-        - these files configure the Web view of way declaration documents
+        - the root directory of each waycast holds the following files
+          which configure the Web view of its way declaration documents
             - both the view shown to the waycaster, and the default view shown to others
-        + `way_declaration_document.css` -
-            - personal style sheet
+        + personal style sheet
+            - `way_declaration_document.css` -
             - summoned by a `link` tag in each way declaration document of the waycast,
               this style sheet works on the client side — in the waycast reader's Web browser —
-              where it formats the presentation of the way declaration.
-            - format: CSS
+              where it formats the presentation of the way declaration
+                ( see § way declaration document
+            - form: CSS
                 ( https://www.w3.org/TR/CSS/
-            - example
+            - working example
                 < http://reluk.ca/project/waycast/way_declaration_document.css
-        + `way_declaration_document.js` -
-            - personal presentation program
+        + personal presentation program
+            - `way_declaration_document.js` -
             - summoned by a `script` tag in each way declaration document of the waycast,
               this program runs on the client side - in the waycast reader's Web browser -
-              where it manipulates the DOM of the way declaration.
-            - format: JavaScript
+              where it manipulates the DOM of the way declaration
+            - form: JavaScript
                 ( https://github.com/tc39/ecma262#ecmascript
-            - example
+            - working example
                 < http://reluk.ca/project/waycast/way_declaration_document.js
-    * way declaration document
-        - instructions: extending the configuration of the Web view to each way declaration document
-          of the waycast
-        =1 link to way_declaration_document.css from the *head* element of the document
-            - link reference format (*href* attribute): relative-path reference
-                ( relative-path reference, https://tools.ietf.org/html/rfc3986#section-4.2, -3.3
-            - examples:
+    + way declaration document
+        - `*.xht` -
+        - each way declaration document summons its Web view configuration via relative-path references
+          to the configuration files of the waycast root directory
+            ( relative-path reference, https://tools.ietf.org/html/rfc3986#section-4.2, -3.3
+        - working example of a suitably formed way declaration document
+            < source: https://github.com/Michael-Allan/waycast/blob/master/normative_ethic.xht
+            < live: http://reluk.ca/project/waycast/normative_ethic.xht
+        - form
 
-                  <head>
-                      · · ·
-                      <link rel='stylesheet' href='way_declaration_document.css'/> <!-- HERE CUSTOM -->
-                      · · ·
-                      </head>
-
-                - or, from a subdirectory of the waycast root directory
-                    ( i.e. when the way declaration document is sub-located
-
-                      <link rel='stylesheet' href='../../way_declaration_document.css'/>  · · ·
-
-        =2 load way_declaration_document.js from the bottom of the *body* element
-            - load reference format (*src* attribute): relative-path reference
-                ( relative-path reference, https://tools.ietf.org/html/rfc3986#section-4.2, -3.3
-            - examples:
-
-                  <body>
-                      · · ·
-                      <script src='way_declaration_document.js'/> <!-- HERE CUSTOM -->
-                      </body>
-
-                - or, from a subdirectory of the waycast root directory
-                    ( i.e. when the way declaration document is sub-located
-
-                      <script src='../../way_declaration_document.js'/>  · · ·
-
-        - working example
-            ( source: https://github.com/Michael-Allan/waycast/blob/master/constraints.xht
-            ( live: http://reluk.ca/project/waycast/constraints.xht
+              <head>
+                  · · ·
+                  <link rel='stylesheet' href='way_declaration_document.css'/>
+                  · · ·
+                  </head>
+              <body>
+                  · · ·
+                  <script src='way_declaration_document.js'/>
+                  </body>
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Testing and troubleshooting`
@@ -72,9 +55,8 @@ wayic.web/doc.task - Documentation in rough
             - a 'file' scheme is inapt for test purposes
             - Web documents loaded on a 'file' scheme URI tend to misbehave in browsers
                 ( http://reluk.ca/project/waycast/_/waycast_configuration_file.xslt.txt
-                ( http://reluk.ca/project/wayic/lex/_/reader.js § testing §§ limitations under 'file' scheme
-                ( http://reluk.ca/project/wayic/read/manual.task § installation §§ limitations under 'file' scheme
-                ( http://reluk.ca/project/wayic/read/readable.js § installation §§ limitations under 'file' scheme
+                ( http://reluk.ca/project/wayic/lex/_/reader.js § testing § limitations under 'file' scheme
+                ( http://reluk.ca/project/wayic/read/manual.task § basic use §§ limitations under 'file' scheme
                 ( https://stackoverflow.com/q/52372080/2402790
                 ( https://stackoverflow.com/q/52697798/2402790
         - general solution
@@ -83,7 +65,7 @@ wayic.web/doc.task - Documentation in rough
             = list
                 | Jetty on Nashorn
                     - if feasible
-                | Python *http.server*
+                | Python `http.server` -
                     ( https://docs.python.org/3/library/http.server.html
                     - for extensionless files one would map MIME type '' to whatever is appropriate
                       in the context
