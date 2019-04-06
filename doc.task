@@ -11,7 +11,7 @@ wayic/web/doc.task - Documentation in rough
             - both the view shown to the waycaster, and the default view shown to others
         + personal style sheet
             - `way_declaration_document.css` -
-            - summoned by a `link` tag in each way declaration document of the waycast,
+            - summoned by a `link` element in each way declaration document of the waycast,
               this style sheet works on the client side — in the waycast reader's Web browser —
               where it formats the presentation of the way declaration
                 ( see § way declaration document
@@ -21,7 +21,7 @@ wayic/web/doc.task - Documentation in rough
                 < http://reluk.ca/project/waycast/way_declaration_document.css
         + personal presentation program
             - `way_declaration_document.js` -
-            - summoned by a `script` tag in each way declaration document of the waycast,
+            - summoned by a `script` element in each way declaration document of the waycast,
               this program runs on the client side - in the waycast reader's Web browser -
               where it manipulates the DOM of the way declaration
             - form: JavaScript
@@ -55,7 +55,7 @@ wayic/web/doc.task - Documentation in rough
             - a 'file' scheme is inapt for test purposes
             - Web documents loaded on a 'file' scheme URI tend to misbehave in browsers
                 ( http://reluk.ca/project/waycast/_/waycast_configuration_file.xslt.txt
-                ( http://reluk.ca/project/wayic/lex/_/reader.js § testing § limitations under 'file' scheme
+                ( http://reluk.ca/project/wayic/lex/_/term_document.js § testing § limitations under 'file' scheme
                 ( http://reluk.ca/project/wayic/read/manual.task § basic use §§ limitations under 'file' scheme
                 ( https://stackoverflow.com/q/52372080/2402790
                 ( https://stackoverflow.com/q/52697798/2402790
