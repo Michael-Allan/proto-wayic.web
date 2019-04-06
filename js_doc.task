@@ -5,11 +5,11 @@ wayic/web/js_doc.task - General conventions for JavaScript programming
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Global namespacing`
     - namespacing for global declarations in JavaScript
-        - example: the public program interface declared at `window.ca_reluk_wayic_read_wayDecDoc` -
+        - example: the public program interface declared at `window.ca_reluk_web_CSide` -
     + dot delimited namespacing
         - example of dot delimited namespacing
 
-              window.ca.reluk.wayic.read.wayDecDoc
+              window.ca.reluk.web.CSide
 
         - avoid it
         - too hard for the programmer to publish the interface cleanly
@@ -21,7 +21,7 @@ wayic/web/js_doc.task - General conventions for JavaScript programming
             - then puzzling over the consequent error message
         - example of correction
 
-              window.ca_reluk_wayic_read_wayDecDoc
+              window.ca_reluk_web_CSide
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Modules`
