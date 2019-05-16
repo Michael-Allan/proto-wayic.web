@@ -1,11 +1,11 @@
-wayic/web/manual.task - Instructions
+proto-wayic/web/manual.task - Instructions
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Publication`
     - instructions to the project provider: how to Web serve this project
     + term documents
-        < see `wayic.lex` § publication
-            ( http://reluk.ca/project/wayic/lex/_/manual.task
+        < see `proto-wayic.lex` § publication
+            ( http://reluk.ca/project/proto-wayic/lex/_/manual.task
 
 
 

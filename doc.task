@@ -1,10 +1,10 @@
-wayic/web/doc.task - Documentation in rough
+proto-wayic/web/doc.task - Documentation in rough
 
     ────────────────────────────────────────────────────────────────────────────────────────────────────
     Configuration of a waycast`
     ( Web specific configuration of a waycast
-    < see also: `wayic.cast` § Configuration of a waycast
-        ( http://reluk.ca/project/wayic/cast/doc.task
+    < see also: `proto-wayic.cast` § Configuration of a waycast
+        ( http://reluk.ca/project/proto-wayic/cast/doc.task
     * waycast root directory
         - the root directory of each waycast holds the following files
           which configure the Web view of its way declaration documents
@@ -18,7 +18,7 @@ wayic/web/doc.task - Documentation in rough
             - form: CSS
                 ( https://www.w3.org/TR/CSS/
             - working example
-                < http://reluk.ca/project/waycast/way_declaration_document.css
+                < http://reluk.ca/project/proto-waycast/way_declaration_document.css
         + personal presentation program
             - `way_declaration_document.js` -
             - summoned by a `script` element in each way declaration document of the waycast,
@@ -27,15 +27,15 @@ wayic/web/doc.task - Documentation in rough
             - form: JavaScript
                 ( https://github.com/tc39/ecma262#ecmascript
             - working example
-                < http://reluk.ca/project/waycast/way_declaration_document.js
+                < http://reluk.ca/project/proto-waycast/way_declaration_document.js
     + way declaration document
         - `*.xht` -
         - each way declaration document summons its Web view configuration via relative-path references
           to the configuration files of the waycast root directory
             ( relative-path reference, https://tools.ietf.org/html/rfc3986#section-4.2, -3.3
         - working example of a suitably formed way declaration document
-            < source: https://github.com/Michael-Allan/waycast/blob/master/normative_ethic.xht
-            < live: http://reluk.ca/project/waycast/normative_ethic.xht
+            < source: https://github.com/Michael-Allan/proto-waycast/blob/master/normative_ethic.xht
+            < live: http://reluk.ca/project/proto-waycast/normative_ethic.xht
         - form
 
               <head>
@@ -54,9 +54,9 @@ wayic/web/doc.task - Documentation in rough
         - problem
             - a 'file' scheme is inapt for test purposes
             - Web documents loaded on a 'file' scheme URI tend to misbehave in browsers
-                ( http://reluk.ca/project/waycast/_/waycast_configuration_file.xslt.txt
-                ( http://reluk.ca/project/wayic/lex/_/term_document.js § testing § limitations under 'file' scheme
-                ( http://reluk.ca/project/wayic/read/manual.task § basic use §§ limitations under 'file' scheme
+                ( http://reluk.ca/project/proto-waycast/_/waycast_configuration_file.xslt.txt
+                ( http://reluk.ca/project/proto-wayic/lex/_/term_document.js § testing § limitations under 'file' scheme
+                ( http://reluk.ca/project/proto-wayic/read/manual.task § basic use §§ limitations under 'file' scheme
                 ( https://stackoverflow.com/q/52372080/2402790
                 ( https://stackoverflow.com/q/52697798/2402790
         - general solution

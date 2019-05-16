@@ -16,6 +16,6 @@
     </section>
 
 
-        <script src='http://reluk.ca/project/wayic/lex/_/term_document.js'/>
+        <script src='http://reluk.ca/project/proto-wayic/lex/_/term_document.js'/>
         </body>
     </html>
