@@ -16,7 +16,18 @@
             window.location</a>.hash</code>
             </li>
         <li>
+            (verb, transitive)
+            Indicate as the referent of a <a href='hyperlink_trigger'>
+            hyperlink trigger</a> or <a href='https://tools.ietf.org/html/rfc3986#section-4.1'>
+            URI reference</a>.
+            </li>
+        <li>
             (noun) an HTML element indicated by <code>window.location.hash</code>
+            </li>
+        <li>
+            The referent of a <a href='hyperlink_trigger'>
+            hyperlink trigger</a> or <a href='https://tools.ietf.org/html/rfc3986#section-4.1'>
+            URI reference</a>.
             </li>
         </ul>
     </section>
